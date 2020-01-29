@@ -20,7 +20,8 @@ namespace HelloMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            //return View();
+            return RedirectToAction("", "Hello"); // redirect index to hello
         }
 
         public IActionResult Privacy()
